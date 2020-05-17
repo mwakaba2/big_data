@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VM configurations
+__MACOSX
+Cloudera-Training-VM-4.1.1.c
