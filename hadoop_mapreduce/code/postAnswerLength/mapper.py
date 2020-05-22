@@ -14,6 +14,6 @@ for line in reader:
     else:
         post_id = abs_parent_id
         
-    print '{0}\t{1}\t{2}'.format(post_id, node_type, len(body))
+    writer.writerow([post_id, node_type, len(body)])
 
 
