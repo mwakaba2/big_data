@@ -14,5 +14,5 @@ for line in reader:
     student_id, timestamp = line[3], line[8]
     timestamp = timestamp.replace('+00', '')
     hour = datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S.%f").hour
-    print "{0}\t{1}".format(student_id, hour)
+    writer.writerow([student_id, hour])
 
